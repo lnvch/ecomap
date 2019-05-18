@@ -1,0 +1,27 @@
+<div id='map'></div>
+<script>
+  var mapboxTiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
+  })
+
+  var map = L.map('map')
+    .addLayer(mapboxTiles)
+    .setView([53.9, 27.55], 12);
+
+  L.marker([53.9, 27.55]).addTo(map);
+
+  L.marker([53.9, 27.65])
+    .addTo(map)
+    .bindPopup('<p>Hello world!<br />This is a nice popup.</p>')
+    .openPopup();
+
+  L.circle([53.9, 27.45],{
+    radius: 2000,
+    color: 'green',
+    fillColor: '#afa',
+    fillOpacity: 0.5
+  }).addTo(map);
+
+  var latlngs = [[53.9, 27.69],[53.92, 27.71],[53.86, 27.74],[53.87, 27.69]];
+  var polygon = L.polygon(latlngs, {color: 'blue'}).addTo(map);
+</script>
