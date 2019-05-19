@@ -1,0 +1,202 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#008080",
+        "marker-size": "medium",
+        "marker-symbol": "building",
+        "title": "ПНЗ №16",
+        "message": "<strong>Минск, ПНЗ №16</strong><br><small>г. Минск, ул. Героев 120 дивизии, 15</small><br><strong>19.05.2019 09:40</strong><br>-----<br>SO<sub>2</sub>: 0.09 ПДК<br>CO: 0.01 ПДК<br>NO<sub>2</sub>: 0.05 ПДК<br>NO: 0.02 ПДК<br>Бензол: &lt;0.01 ПДК<br>Толуол: &lt;0.01 ПДК<br>Температура: 21.4 °C<br>Направление ветра: 150.3 °<br>Скорость ветра: 2.1 м/с<br>Влажность: 23.4 %<br>Давление: 988.7 гПа<br>PM<sub>2.5</sub>: 0.73 ПДК"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.71118074655533,
+          53.948098944647654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#008080",
+        "marker-size": "medium",
+        "marker-symbol": "building",
+        "title": "ПНЗ №1",
+        "message": "<strong>Минск, ПНЗ №1</strong><br><small>г. Минск, пр. Независимости, 110а</small><br><strong>19.05.2019 09:40</strong><br>-----<br>Бензол: 0.01 ПДК<br>Толуол: &lt;0.01 ПДК<br>Направление ветра: 18.2 °<br>Скорость ветра: 1.3 м/с<br>Влажность: 0.2 %<br>Давление: 990.8 гПа<br>PM<sub>10</sub>: 0.28 ПДК"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.6325249671936,
+          53.92702343162688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#008080",
+        "marker-size": "medium",
+        "marker-symbol": "building",
+        "title": "ПНЗ №13",
+        "message": "<strong>Минск, ПНЗ №13</strong><br><small>г. Минск, ул. Радиальная, 50</small><br><strong>19.05.2019 09:40</strong><br>-----<br>CO: 0.01 ПДК<br>Бензол: &lt;0.01 ПДК<br>Толуол: &lt;0.01 ПДК<br>Температура: 23.6 °C<br>Направление ветра: 340.9 °<br>Влажность: 41.7 %<br>Давление: 1001 гПа"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.644155025482178,
+          53.895146796973826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#008080",
+        "marker-size": "medium",
+        "marker-symbol": "building",
+        "title": "ПНЗ №4",
+        "message": "<strong>Минск, ПНЗ №4</strong><br><small>г. Минск, ул. Тимирязева, 23</small><br><strong>19.05.2019 09:40</strong><br>-----<br>SO<sub>2</sub>: &lt;0.01 ПДК<br>Температура: 19.8 °C<br>Направление ветра: 97.8 °<br>Скорость ветра: 1.2 м/с<br>Влажность: 100 %<br>Давление: 989.4 гПа"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.523785531520844,
+          53.91331895481045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#008080",
+        "marker-size": "medium",
+        "marker-symbol": "building",
+        "title": "ПНЗ №11",
+        "message": "<strong>Минск, ПНЗ №11</strong><br><small>г. Минск, ул. Корженевского</small><br><strong>19.05.2019 09:40</strong><br>-----<br>CO: 0.02 ПДК<br>NO: &lt;0.01 ПДК<br>Бензол: &lt;0.01 ПДК<br>SO<sub>2</sub>: 0.05 ПДК<br>NO<sub>2</sub>: 0.05 ПДК<br>Толуол: &lt;0.01 ПДК<br>Температура: 15.2 °C<br>Направление ветра: 0 °<br>Скорость ветра: 1.1 м/с<br>Влажность: 100 %<br>Давление: 987.5 гПа"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.519550323486328,
+          53.842893406036325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#004080",
+        "marker-size": "small",
+        "marker-symbol": "lighthouse",
+        "title": "№9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.594271302223206,
+          53.94733808726242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#004080",
+        "marker-size": "small",
+        "marker-symbol": "lighthouse",
+        "title": "№3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.553067207336426,
+          53.89058197314362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#004080",
+        "marker-size": "small",
+        "marker-symbol": "lighthouse",
+        "title": "№14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.419986724853516,
+          53.88097018784613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#004080",
+        "marker-size": "small",
+        "marker-symbol": "lighthouse",
+        "title": "№12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.510108947753906,
+          53.89584222497972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#004080",
+        "marker-size": "small",
+        "marker-symbol": "lighthouse",
+        "title": "№2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.595124244689938,
+          53.892807545109655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#004080",
+        "marker-size": "small",
+        "marker-symbol": "lighthouse",
+        "title": "№5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.64762043952942,
+          53.86958495211008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#004080",
+        "marker-size": "small",
+        "marker-symbol": "lighthouse",
+        "title": 15
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.71550178527832,
+          53.8439188580387
+        ]
+      }
+    }
+  ]
+}

@@ -1,47 +1,130 @@
 <div id='map'></div>
 <script>
-  var mapboxTiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  var osmTiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
-  })
+  });
 
   var map = L.map('map')
-    .addLayer(mapboxTiles)
+    .addLayer(osmTiles)
     .setView([53.9, 27.55], 12);
 
-  // L.marker([53.9, 27.55]).addTo(map);
+  let air_layer = L.layerGroup().addTo(map)
+  let regions_layer = L.layerGroup().addTo(map)
+  let water_layer = L.layerGroup().addTo(map)
+  let parks_layer = L.layerGroup().addTo(map)
+  let lakes_layer = L.layerGroup().addTo(map)
+  let user_actions_layer = L.layerGroup().addTo(map)
+  let trees_layer = L.layerGroup().addTo(map)
 
-  // L.marker([53.9, 27.65])
-  //   .addTo(map)
-  //   .bindPopup('<p>Hello world!<br />This is a nice popup.</p>')
-  //   .openPopup();
+  var overlayMaps = {
+    "Air": air_layer,
+    "City regions": regions_layer,
+    "Water rigidity": water_layer,
+    "Parks": parks_layer,
+    "Lakes": lakes_layer,
+    "User actions": user_actions_layer,
+    "Trees by one": trees_layer
+  };
 
-  // L.circle([53.9, 27.45],{
-  //   radius: 2000,
-  //   color: 'green',
-  //   fillColor: '#afa',
-  //   fillOpacity: 0.5
-  // }).addTo(map);
+  L.control.layers({}, overlayMaps).addTo(map);
 
-  var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
-      '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
-      '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A', 
-      '#FF99E6', '#CCFF1A', '#FF1A66', '#E6331A', '#33FFCC',
-      '#66994D', '#B366CC', '#4D8000', '#B33300', '#CC80CC', 
-      '#66664D', '#991AFF', '#E666FF', '#4DB3FF', '#1AB399',
-      '#E666B3', '#33991A', '#CC9999', '#B3B31A', '#00E680', 
-      '#4D8066', '#809980', '#E6FF80', '#1AFF33', '#999933',
-      '#FF3380', '#CCCC00', '#66E64D', '#4D80CC', '#9900B3', 
-      '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'];
+  $.ajax({url: "air.json", success: function(result){
+    result.features.map(function(item, i, arr) {
+      air_marker = L.geoJSON(item.geometry)
+        .bindPopup(item.properties['message'])
+      air_layer.addLayer(air_marker)
+    })
+  }});
 
   $.ajax({url: "regions.json", success: function(result){
-    result.forEach(function(item, i, arr) {
-      L.geoJSON(
-        JSON.parse(item[16]),
+    result.features.map(function(item, i, arr) {
+      region_area = L.geoJSON(item.geometry,
         {
           style: {
-            color: colorArray[i]
+            color: item.properties.stroke,
+            weight: item.properties['stroke-width'],
+            opacity: item.properties['stroke-opacity'],
+            fillColor: item.properties.fill,
+            fillOpacity: item.properties['fill-opacity']
           }
-        }).addTo(map);
+        }).bindPopup(item.properties['message']);
+      regions_layer.addLayer(region_area);
+    });
+  }});
+
+  $.ajax({url: "water_quality.json", success: function(result){
+    result.features.forEach(function(item, i, arr) {
+      water_area = L.geoJSON(
+        item.geometry,
+        {
+          style: {
+            color: item.properties.stroke,
+            weight: item.properties['stroke-width'],
+            opacity: item.properties['stroke-opacity'],
+            fillColor: item.properties.fill,
+            fillOpacity: item.properties['fill-opacity']
+          }
+        }).bindPopup(item.properties['message']);
+      water_layer.addLayer(water_area);
+    });
+  }});
+
+  var greenIcon = L.icon({
+    iconUrl: '/tree-icon.png',
+    iconSize:     [20, 20], // size of the icon
+  });
+
+  $.ajax({url: "trees.json", success: function(result){
+    result.features.forEach(function(item, i, arr) {
+      tree = L.geoJSON(item.geometry,
+        {
+          pointToLayer: function (feature, latlng) {
+            return L.marker(latlng, {icon: greenIcon});
+          },
+        }).bindPopup("Порода: Ясень</br>Предположительный возраст: 15 лет</br>Статус: здоровое");
+      trees_layer.addLayer(tree)
+    });
+  }});
+
+  $.ajax({url: "parks.json", success: function(result){
+    result.features.forEach(function(item, i, arr) {
+      park = L.geoJSON(item.geometry,
+        {
+          style: {
+            color: 'green',
+          }
+        });
+      parks_layer.addLayer(park);
+    });
+  }});
+
+  $.ajax({url: "lakes.json", success: function(result){
+    result.features.forEach(function(item, i, arr) {
+      lake = L.geoJSON(item.geometry,
+        {
+          style: {
+            color: 'blue',
+          }
+        });
+      lakes_layer.addLayer(lake);
+    });
+  }});
+
+  $.ajax({url: "markers.json", success: function(result){
+    result.features.forEach(function(item, i, arr) {
+      user_action = L.geoJSON(item.geometry,{
+          pointToLayer: function (feature, latlng) {
+            return L.marker(latlng,
+              {
+                icon: L.icon({
+                  iconUrl: item.properties['src'],
+                  iconSize:     [30, 30],
+                  className: 'rounded-icon'
+                })
+              });
+            },
+        });
+      user_actions_layer.addLayer(user_action);
     });
   }});
 </script>

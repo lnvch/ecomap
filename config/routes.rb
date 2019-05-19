@@ -3,5 +3,7 @@ Rails.application.routes.draw do
 
   get 'map/index'
   resources :regions, only: [:index]
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :trees, only: [:index]
+  resources :parks, only: [:index]
+  resources :lakes, only: [:index]
 end

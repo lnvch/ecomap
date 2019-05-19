@@ -4,11 +4,12 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#800000",
+        "stroke": "#004080",
         "stroke-width": 2,
         "stroke-opacity": 1,
-        "fill": "#4baf2d",
-        "fill-opacity": 0.5
+        "fill": "#004687",
+        "fill-opacity": 0.5,
+        "message": "средняя жесткость 5.3 (ПДК 7) <br> средняя минерализация 260-330 мг/дм3 (ПДК 1000мг/дм3)"
       },
       "geometry": {
         "type": "Polygon",
@@ -225,11 +226,12 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#800000",
+        "stroke": "#004080",
         "stroke-width": 2,
         "stroke-opacity": 1,
-        "fill": "#4baf2d",
-        "fill-opacity": 0.5
+        "fill": "#004687",
+        "fill-opacity": 0.5,
+        "message": "средняя жесткость 4.9 (ПДК 7) <br> средняя минерализация 260-330 мг/дм3 (ПДК 1000мг/дм3)"
       },
       "geometry": {
         "type": "Polygon",
@@ -382,11 +384,12 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#800000",
+        "stroke": "#004080",
         "stroke-width": 2,
         "stroke-opacity": 1,
-        "fill": "#4baf2d",
-        "fill-opacity": 0.5
+        "fill": "#3282be",
+        "fill-opacity": 0.5,
+        "message": "средняя жесткость 4.4 (ПДК 7) <br> средняя минерализация 210-330 мг/дм3 (ПДК 1000мг/дм3)"
       },
       "geometry": {
         "type": "Polygon",
@@ -735,12 +738,12 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#800000",
+        "stroke": "#004080",
         "stroke-width": 2,
         "stroke-opacity": 1,
-        "fill": "#f64a3d",
+        "fill": "#3282be",
         "fill-opacity": 0.5,
-        "message": "aaa<br>bbb"
+        "message": "средняя жесткость 4.4 (ПДК 7) <br> средняя минерализация 200-250 мг/дм3 (ПДК 1000мг/дм3)"
       },
       "geometry": {
         "type": "Polygon",
@@ -1021,11 +1024,12 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#800000",
+        "stroke": "#004080",
         "stroke-width": 2,
         "stroke-opacity": 1,
-        "fill": "#ffb941",
-        "fill-opacity": 0.5
+        "fill": "#004687",
+        "fill-opacity": 0.5,
+        "message": "средняя жесткость 5.1 (ПДК 7) <br> средняя минерализация 220-290 мг/дм3 (ПДК 1000мг/дм3)"
       },
       "geometry": {
         "type": "Polygon",
@@ -1262,11 +1266,12 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#800000",
+        "stroke": "#004080",
         "stroke-width": 2,
         "stroke-opacity": 1,
-        "fill": "#ffb941",
-        "fill-opacity": 0.5
+        "fill": "#000014",
+        "fill-opacity": 0.5,
+        "message": "средняя жесткость 6.2 (ПДК 7) <br> средняя минерализация 330-360 мг/дм3 (ПДК 1000мг/дм3)"
       },
       "geometry": {
         "type": "Polygon",
@@ -1375,11 +1380,12 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#800000",
+        "stroke": "#004080",
         "stroke-width": 2,
         "stroke-opacity": 1,
-        "fill": "#f64a3d",
-        "fill-opacity": 0.5
+        "fill": "#64b4ff",
+        "fill-opacity": 0.5,
+        "message": "средняя жесткость 3.3 (ПДК 7) <br> средняя минерализация 260-330 мг/дм3 (ПДК 1000мг/дм3)"
       },
       "geometry": {
         "type": "Polygon",
@@ -1488,11 +1494,12 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#800000",
+        "stroke": "#004080",
         "stroke-width": 2,
         "stroke-opacity": 1,
-        "fill": "#ffb941",
-        "fill-opacity": 0.5
+        "fill": "#64b4ff",
+        "fill-opacity": 0.5,
+        "message": "средняя жесткость 3.3 (ПДК 7) <br> средняя минерализация 260-330 мг/дм3 (ПДК 1000мг/дм3)"
       },
       "geometry": {
         "type": "Polygon",
@@ -1597,11 +1604,12 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#800000",
+        "stroke": "#004080",
         "stroke-width": 2,
         "stroke-opacity": 1,
-        "fill": "#b4c828",
-        "fill-opacity": 0.5
+        "fill": "#64b4ff",
+        "fill-opacity": 0.5,
+        "message": "средняя жесткость 3.3 (ПДК 7) <br> средняя минерализация 190 мг/дм3 (ПДК 1000мг/дм3)"
       },
       "geometry": {
         "type": "Polygon",

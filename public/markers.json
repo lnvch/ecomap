@@ -1,0 +1,83 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "src": "comment.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.566800117492676,
+          53.93145794190584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "src": "mite.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.5701904296875,
+          53.927794135331645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "src": "hum.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.571842670440674,
+          53.930194596660314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "src": "waste.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.566499710083008,
+          53.932392792766485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "src": "workout.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.568237781524655,
+          53.927920478843575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "src": "comment.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.57540464401245,
+          53.930813640609145
+        ]
+      }
+    }
+  ]
+}

@@ -5,15 +5,15 @@ default: &default
 
 development:
   <<: *default
-  database: db/development.sqlite3
-
-development:
-  <<: *default
   database: ecomap_development
+  username: lxnotes
+  password: lxnotespass2016
 
 test:
   <<: *default
   database: ecomap_test
+  username: lxnotes
+  password: lxnotespass2016
 
 production:
   <<: *default
